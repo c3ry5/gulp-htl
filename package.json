@@ -1,0 +1,25 @@
+{
+  "name": "gulp-htl",
+  "version": "1.0.0",
+  "description": "gulp compiler for the Adobe HTL templating language",
+  "main": "gulp-htl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c3ry5/gulp-htl.git"
+  },
+  "keywords": [
+    "gulp",
+    "htl",
+    "adobe",
+    "compiler"
+  ],
+  "author": "c3ry5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c3ry5/gulp-htl/issues"
+  },
+  "homepage": "https://github.com/c3ry5/gulp-htl#readme"
+}
