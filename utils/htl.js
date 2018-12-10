@@ -39,12 +39,6 @@ module.exports = {
         let currentTemplateFilePath = base + '/htlmock/runtime.html';
         let pathArr = file.path.split(path.sep);
 
-        // pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(/\.html/g, '.spec.html');
-
-        // let newFilePath = pathArr.join(path.sep);
-
-        // file.path = newFilePath;
-
         fs.writeFile(currentTemplateFilePath, res, 'utf8', function(errors) {
             if (errors) {
                 console.error(errors);
