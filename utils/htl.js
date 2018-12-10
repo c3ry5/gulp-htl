@@ -37,7 +37,6 @@ module.exports = {
     render: function(base, res, mockData, file, cb) {
         let _this = this;
         let currentTemplateFilePath = base + '/htlmock/runtime.html';
-        let pathArr = file.path.split(path.sep);
 
         fs.writeFile(currentTemplateFilePath, res, 'utf8', function(errors) {
             if (errors) {
