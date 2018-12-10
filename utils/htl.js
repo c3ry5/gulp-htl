@@ -39,11 +39,11 @@ module.exports = {
         let currentTemplateFilePath = base + '/htlmock/runtime.html';
         let pathArr = file.path.split(path.sep);
 
-        pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(/\.html/g, '.spec.html');
+        // pathArr[pathArr.length - 1] = pathArr[pathArr.length - 1].replace(/\.html/g, '.spec.html');
 
-        let newFilePath = pathArr.join(path.sep);
+        // let newFilePath = pathArr.join(path.sep);
 
-        file.path = newFilePath;
+        // file.path = newFilePath;
 
         fs.writeFile(currentTemplateFilePath, res, 'utf8', function(errors) {
             if (errors) {
@@ -53,6 +53,7 @@ module.exports = {
                 let currentTemplate = require(currentTemplateFilePath);
                 let result = currentTemplate.main(mockData).then(function(result) {
                     fs.unlinkSync(currentTemplateFilePath);
+
                     file.contents = Buffer.from(result.body);
                     _this.push(file);
                     cb()
