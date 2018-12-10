@@ -12,12 +12,14 @@ $ npm install --save-dev gulp-htl
 
 ```js
 const gulp = require('gulp');
-const htl = require('gulp-htl');
+const rename = require('gulp-rename');
+const htl = require('./index.js');
 
 gulp.task('default', () =>
-	gulp.src('src/**/*.html')
+	gulp.src(['src/**/*.html', '!src/**/*.spec.html'])
 		.pipe(htl())
-		.pipe(gulp.dest('dist'))
+		.pipe(rename({extname:'.spec.html'}))
+		.pipe(gulp.dest('src'))
 );
 ```
 

@@ -1,7 +1,7 @@
 module.exports = class MyUseClass {
   use() {
     return {
-      title: 'hello world'
+      title: 'hello world 123'
     };
   }
 };
