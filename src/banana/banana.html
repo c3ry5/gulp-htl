@@ -1,1 +1,6 @@
-<div data-sly-use.content="code.banana.BananaSlingModel">${content.title}</div>
+<div data-sly-use.content="code.banana.BananaSlingModel">
+    ${content.title}
+    <ul data-sly-list="${content.arr}">
+        <li>${item.num}</li>
+    </ul>
+</div>

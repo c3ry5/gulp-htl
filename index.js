@@ -2,8 +2,6 @@
 
 const through = require('through2');
 const PluginError = require('plugin-error');
-const fs = require('fs');
-const path = require('path');
 const utils = {
     htl: require('./utils/htl.js'),
     helpers: require('./utils/helpers.js')

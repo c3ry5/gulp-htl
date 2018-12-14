@@ -8,4 +8,6 @@ gulp.task('default', () =>
 		.pipe(rename({extname:'.spec.html'}))
 		.pipe(gulp.dest('src'))
 );
-
+gulp.task('watch', () => {
+	gulp.watch(['src/**/*.html', 'src/**/htlmock/*', '!src/**/*.spec.html'], ['default']); 
+});

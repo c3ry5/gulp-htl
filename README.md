@@ -23,22 +23,6 @@ gulp.task('default', () =>
 );
 ```
 
-## API
-
-### htl([options])
-
-#### options
-
-Type: `Object`
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
-
 ## License
 
 MIT © [Cerys Williams](c3ry5.co.uk)
