@@ -18,7 +18,7 @@ module.exports = {
          * First we rename it to data-sly-resource and provide an absolute path, it later on gets added to the toCompile queue
          * The next time it will get compiled, we change data-slyresource into data-sly-resource and include the targeted component
          */
-        templateFile = fs.readFileSync(filePath, "utf8");
+        let templateFile = fs.readFileSync(filePath, "utf8");
         templateFile = templateFile.replace(attributeDelayedResource, 'data-sly-resource');
         templateFile = utils.helpers.replaceAll(templateFile, /data-sly-include="([^\/]+)"/, '><div ' + attributeDelayedResource + '="' + path.dirname(filePath) + '/$1"></div></sly><sly');
         templateFile = templateFile.replace(/data-sly-include="(.*\/(.*))"/, '><div ' + attributeDelayedResource + '="' + targetDir + '/$1"></div></sly><sly');
@@ -44,7 +44,7 @@ module.exports = {
             } else {
                 delete require.cache[require.resolve(currentTemplateFilePath)];
                 let currentTemplate = require(currentTemplateFilePath);
-                let result = currentTemplate.main(mockData).then(function(result) {
+                currentTemplate.main(mockData).then(function(result) {
                     fs.unlinkSync(currentTemplateFilePath);
 
                     file.contents = Buffer.from(result.body);

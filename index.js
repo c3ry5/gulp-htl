@@ -17,7 +17,7 @@ module.exports = function (options) {
             return;
         }
 
-        if (file.path.indexOf('.html') <= 0 || file.path.indexOf('.spec.html') > 0) {
+        if (file.path.indexOf('.html') <= 0 || file.path.indexOf('.spec.html') >= 1) {
             cb(null, file);
             return;
         }

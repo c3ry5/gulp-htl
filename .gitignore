@@ -69,3 +69,5 @@ src/.DS_Store
 src/.DS_Store
 src/test/.DS_Store
 src/.DS_Store
+.scannerwork/report-task.txt
+.scannerwork/.sonar_lock
