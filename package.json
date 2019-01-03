@@ -1,6 +1,6 @@
 {
 	"name": "gulp-htl",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "HTL gulp plugin",
 	"license": "MIT",
 	"repository": "c3ry5/gulp-htl",
@@ -17,7 +17,7 @@
 		"index.js"
 	],
 	"keywords": [
-		"gulpplugin"
+		"htl", "gulp", "aem", "sightly"
 	],
 	"dependencies": {
 		"@adobe/htlengine": "^2.1.0",
