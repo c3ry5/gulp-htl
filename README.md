@@ -13,7 +13,7 @@ $ npm install --save-dev gulp-htl
 ```js
 const gulp = require('gulp');
 const rename = require('gulp-rename');
-const htl = require('./index.js');
+const htl = require('gulp-htl');
 
 gulp.task('default', () =>
 	gulp.src(['src/**/*.html', '!src/**/*.spec.html'])
