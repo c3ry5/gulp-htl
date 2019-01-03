@@ -4,9 +4,15 @@
 ## Install
 
 ```
+$ npm install --global gulp
 $ npm install --save-dev gulp-htl
 ```
 
+For the example below you'll also need 
+
+```
+$ npm install --save-dev gulp-rename
+```
 
 ## Usage
 
@@ -22,6 +28,10 @@ gulp.task('default', () =>
 		.pipe(gulp.dest('src'))
 );
 ```
+
+## Thanks 
+
+Thanks to [LatourJ](https://github.com/LatourJ) for working out some of the quirks the HTL compiler in their [project](https://github.com/LatourJ/mass-htl)
 
 ## License
 
