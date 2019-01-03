@@ -1,5 +1,6 @@
 > HTL gulp plugin
 
+[![NPM](https://nodei.co/npm/gulp-htl.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/gulp-htl/)
 
 ## Install
 

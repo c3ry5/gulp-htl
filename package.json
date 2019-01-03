@@ -1,6 +1,6 @@
 {
 	"name": "gulp-htl",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "HTL gulp plugin",
 	"license": "MIT",
 	"repository": "c3ry5/gulp-htl",
