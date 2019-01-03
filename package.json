@@ -1,13 +1,13 @@
 {
 	"name": "gulp-htl",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "HTL gulp plugin",
 	"license": "MIT",
 	"repository": "c3ry5/gulp-htl",
 	"author": {
 		"name": "Cerys Williams",
 		"email": "cerys.paige.williams@gmail.com",
-		"url": "c3ry5.co.uk"
+		"url": "https://www.c3ry5.co.uk"
 	},
 	"engines": {
 		"node": ">=4"

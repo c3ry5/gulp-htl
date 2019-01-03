@@ -25,4 +25,4 @@ gulp.task('default', () =>
 
 ## License
 
-MIT © [Cerys Williams](c3ry5.co.uk)
+MIT © [Cerys Williams](https://www.c3ry5.co.uk)
