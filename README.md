@@ -2,6 +2,8 @@
 
 [![NPM](https://nodei.co/npm/gulp-htl.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/gulp-htl/)
 
+['sonarcloud.io status'](https://sonarcloud.io/api/project_badges/measure?project=c3ry5_gulp-htl&metric=alert_status)
+
 ## Install
 
 ```
