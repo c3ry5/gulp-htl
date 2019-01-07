@@ -44,9 +44,10 @@ module.exports = {
             } else {
                 delete require.cache[require.resolve(currentTemplateFilePath)];
                 let currentTemplate = require(currentTemplateFilePath);
+
                 currentTemplate.main(mockData).then(function(result) {
                     fs.unlinkSync(currentTemplateFilePath);
-
+                    process.chdir(process.env.INIT_CWD);
                     file.contents = Buffer.from(result.body);
                     _this.push(file);
                     cb()

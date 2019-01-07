@@ -36,7 +36,7 @@ module.exports = function (options) {
         const templateFile = utils.htl.fixSlyInclude(file.path, base, mockData);
         const result = new utils.htl.compiler().includeRuntime(true).withRuntimeVar(Object.keys(mockData)).compileToString(templateFile);
 
-        Promise.resolve(result).then(function (result) {
+        Promise.resolve(result).then(function (result) {            
             utils.htl.render.call(_this, base, result, mockData, file, cb);
         }).catch(function () {
             console.error(arguments);
