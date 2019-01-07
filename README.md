@@ -7,7 +7,7 @@
 ## Install
 
 ```
-$ npm install --global gulp
+$ npm install --save-dev gulp
 $ npm install --save-dev gulp-htl
 ```
 
