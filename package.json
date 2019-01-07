@@ -1,6 +1,6 @@
 {
 	"name": "gulp-htl",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"description": "HTL gulp plugin",
 	"license": "MIT",
 	"repository": "c3ry5/gulp-htl",
@@ -14,7 +14,9 @@
 	},
 	"scripts": {},
 	"files": [
-		"index.js"
+		"index.js",
+		"utils/htl.js",
+		"utils/helpers.js"
 	],
 	"keywords": [
 		"htl", "gulp", "aem", "sightly"
