@@ -19,7 +19,10 @@
 		"utils/helpers.js"
 	],
 	"keywords": [
-		"htl", "gulp", "aem", "sightly"
+		"htl",
+		"gulp",
+		"aem",
+		"sightly"
 	],
 	"dependencies": {
 		"@adobe/htlengine": "^2.1.0",
